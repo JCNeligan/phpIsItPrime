@@ -1,5 +1,5 @@
 <?php
-  if($_GET) {
+  if(is_numeric($_GET["number"]) && $_GET["number"] > 0 && $_GET["number"] == round($_GET["number"], 0)) {
     $i = 2;
     $isPrime = true;
 
@@ -16,6 +16,9 @@
     else {
       echo "<p>$i is not prime.</p>";
     }
+  }
+  else if($_GET) {
+    echo "<p>Please enter a positive whole number</p>";
   }
 ?>
 
