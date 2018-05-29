@@ -1,11 +1,20 @@
 <?php
   if($_GET) {
     $i = 2;
+    $isPrime = true;
+
     while($i < $_GET["number"]) {
       if($_GET["number"] % $i == 0) {
-        echo $_GET["number"]." is divisible by $i";
+        $isPrime = false;
       }
       $i++;
+    }
+
+    if($isPrime) {
+      echo "<p>$i is a prime number!</p>";
+    }
+    else {
+      echo "<p>$i is not prime.</p>";
     }
   }
 ?>
