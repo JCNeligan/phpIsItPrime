@@ -5,6 +5,7 @@ document.getElementById("submit").onclick = function() {
 
     if (isNaN(x) || x < 0 || x != Math.round(x)) {
         text = "Please enter a positive whole number.";
+        alert(text);
     }
-    alert(text);
+
 }
