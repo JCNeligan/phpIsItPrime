@@ -1,0 +1,44 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    background: #35520B;
+}
+
+header {
+    margin: 0 auto;
+    height: 200px;
+    background: url("header_background.jpg") no-repeat center;
+    background-size: cover;
+    border-bottom: #9650AD solid 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: paralucent, sans-serif;
+    color: white;
+    vertical-align: bottom;
+    position: relative;
+    top: 75%;
+    left: 90px;
+}
+
+.main {
+    width: 50%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.main p {
+    font-size: 1.1rem;
+    font-family: paralucent, sans-serif;
+    color: white;
+}
+
+.main form {
+    margin-top: 50px;
+}
