@@ -6,12 +6,13 @@ body {
 
 html {
     background: #35520B;
+    font-family: paralucent, sans-serif;
 }
 
 header {
     margin: 0 auto;
     height: 200px;
-    background: url("header_background.jpg") no-repeat center;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("header_background.jpg") no-repeat center;
     background-size: cover;
     border-bottom: #9650AD solid 10px;
 }
@@ -19,7 +20,6 @@ header {
 header h1 {
     font-size: 3rem;
     font-weight: bold;
-    font-family: paralucent, sans-serif;
     color: white;
     vertical-align: bottom;
     position: relative;
@@ -35,10 +35,48 @@ header h1 {
 
 .main p {
     font-size: 1.1rem;
-    font-family: paralucent, sans-serif;
     color: white;
 }
 
 .main form {
     margin-top: 50px;
+}
+
+#user-number {
+    font-size: 4rem;
+    margin: 40px auto;
+}
+
+input[type="number"] {
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    margin-right: 5px;
+    border-radius: 10px;
+    /* box-sizing: border-box; */
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=submit] {
+    font-family: paralucent, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9C69AD;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #9650AD;
 }
