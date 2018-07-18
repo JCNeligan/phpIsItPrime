@@ -40,16 +40,19 @@ if (is_numeric($_GET["number"]) && $_GET["number"] > 0 && $_GET["number"] == rou
         <section class="main">
             <p>Please enter a whole number to see if it is prime.</p>
             <form>
-                <input name="number" type="number" />
-                <input type="submit" value="Go!" />
+                <input id="number" name="number" type="number" />
+                <input id="submit" type="submit" value="Go!" />
             </form>
             <div>
                 <p id="user-number">
                     <?php echo $i;?>
                 </p>
-                <?php echo $response; ?>
+                <p>
+                    <?php echo $response; ?>
+                </p>
             </div>
         </section>
     </body>
+    <script src="scripts.js"></script>
 
     </html>
